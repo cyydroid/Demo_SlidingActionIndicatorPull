@@ -904,17 +904,8 @@ containing a value of this type.
         public static final int ic_action_github=0x7f020057;
         public static final int ic_launcher=0x7f020058;
         public static final int indicator=0x7f020059;
-        public static final int new_indicator=0x7f02005a;
-        public static final int octocat=0x7f02005b;
-        public static final int octocat_scaled=0x7f02005c;
-        public static final int ostrich=0x7f02005d;
-        public static final int peacock=0x7f02005e;
-        public static final int penguin=0x7f02005f;
-        public static final int shadow=0x7f020060;
-        public static final int shadowright=0x7f020061;
-        public static final int toucan=0x7f020062;
-        public static final int turkey=0x7f020063;
-        public static final int vulture=0x7f020064;
+        public static final int slidingbar_indicator=0x7f02005a;
+        public static final int slidingbar_shadow=0x7f02005b;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040027;
@@ -946,47 +937,26 @@ containing a value of this type.
         public static final int abs__title=0x7f040020;
         public static final int abs__titleDivider=0x7f040021;
         public static final int abs__up=0x7f04000b;
-        public static final int behind_width=0x7f04003c;
         public static final int content_frame=0x7f04002c;
         public static final int disableHome=0x7f040009;
-        public static final int fade_degree=0x7f040040;
-        public static final int fade_enabled=0x7f04003f;
         public static final int fullscreen=0x7f040013;
-        public static final int github=0x7f040047;
-        public static final int github_button=0x7f04002d;
-        public static final int grid_item_img=0x7f04002e;
+        public static final int github=0x7f040032;
         public static final int homeAsUp=0x7f040006;
         public static final int left=0x7f040010;
-        public static final int left_right=0x7f040033;
         public static final int listMode=0x7f040002;
         public static final int margin=0x7f040012;
-        public static final int menu_frame=0x7f04002f;
-        public static final int menu_frame_two=0x7f040030;
-        public static final int mode=0x7f040032;
+        public static final int menu_frame=0x7f04002d;
         public static final int normal=0x7f040001;
-        public static final int pager=0x7f040031;
         public static final int right=0x7f040011;
-        public static final int row_icon=0x7f040041;
-        public static final int row_title=0x7f040042;
-        public static final int scroll_scale=0x7f04003b;
         public static final int selected_view=0x7f040014;
-        public static final int shadow_enabled=0x7f04003d;
-        public static final int shadow_width=0x7f04003e;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
-        public static final int slidingmenulayout=0x7f040044;
-        public static final int slidingmenumain=0x7f040043;
-        public static final int slidingmenurowicon=0x7f040045;
-        public static final int slidingmenurowtitle=0x7f040046;
+        public static final int slidingmenulayout=0x7f04002f;
+        public static final int slidingmenumain=0x7f04002e;
+        public static final int slidingmenurowicon=0x7f040030;
+        public static final int slidingmenurowtitle=0x7f040031;
         public static final int tabMode=0x7f040003;
-        public static final int touch_above=0x7f040034;
-        public static final int touch_above_full=0x7f040035;
-        public static final int touch_above_margin=0x7f040036;
-        public static final int touch_above_none=0x7f040037;
-        public static final int touch_behind=0x7f040038;
-        public static final int touch_behind_full=0x7f040039;
-        public static final int touch_behind_margin=0x7f04003a;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }
@@ -1016,24 +986,15 @@ containing a value of this type.
         public static final int abs__screen_simple=0x7f030012;
         public static final int abs__screen_simple_overlay_action_mode=0x7f030013;
         public static final int content_frame=0x7f030014;
-        public static final int github_button=0x7f030015;
-        public static final int grid_item=0x7f030016;
-        public static final int list=0x7f030017;
-        public static final int list_grid=0x7f030018;
-        public static final int main=0x7f030019;
-        public static final int menu=0x7f03001a;
-        public static final int menu_frame=0x7f03001b;
-        public static final int menu_frame_two=0x7f03001c;
-        public static final int pager=0x7f03001d;
-        public static final int properties=0x7f03001e;
-        public static final int responsive_content_frame=0x7f03001f;
-        public static final int row=0x7f030020;
-        public static final int shadow=0x7f030021;
-        public static final int sherlock_spinner_dropdown_item=0x7f030022;
-        public static final int sherlock_spinner_item=0x7f030023;
-        public static final int slidingmenumain=0x7f030024;
-        public static final int slidingmenumainlist=0x7f030025;
-        public static final int slidingmenurow=0x7f030026;
+        public static final int list=0x7f030015;
+        public static final int main=0x7f030016;
+        public static final int menu_frame=0x7f030017;
+        public static final int shadow=0x7f030018;
+        public static final int sherlock_spinner_dropdown_item=0x7f030019;
+        public static final int sherlock_spinner_item=0x7f03001a;
+        public static final int slidingmenumain=0x7f03001b;
+        public static final int slidingmenumainlist=0x7f03001c;
+        public static final int slidingmenurow=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
@@ -1100,9 +1061,11 @@ containing a value of this type.
         public static final int what_is_this=0x7f09001f;
     }
     public static final class style {
+        /**  actionbar 的样式 
+         */
+        public static final int ActionBarExampleTheme=0x7f0a0058;
         public static final int DialogWindowTitle_Sherlock=0x7f0a0033;
         public static final int DialogWindowTitle_Sherlock_Light=0x7f0a0034;
-        public static final int ExampleTheme=0x7f0a0058;
         public static final int Sherlock___TextAppearance_Small=0x7f0a0047;
         public static final int Sherlock___Theme=0x7f0a004a;
         public static final int Sherlock___Theme_DarkActionBar=0x7f0a004c;

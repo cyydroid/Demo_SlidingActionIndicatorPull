@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.slidingmenu.example.fragments.SampleListFragment;
+import com.slidingmenu.example.fragments.ColorMenuFragment;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
@@ -33,16 +33,16 @@ public class BaseActivity extends SlidingFragmentActivity {
 		setTitle(mTitleRes);
 
 		// set the Behind View
-//		setBehindContentView(R.layout.menu_frame);
-//		FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
-//		mFrag = new SampleListFragment();
-//		t.replace(R.id.menu_frame, mFrag);
-//		t.commit();
+		setBehindContentView(R.layout.menu_frame);
+		FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
+		mFrag = new ColorMenuFragment();
+		t.replace(R.id.menu_frame, mFrag);
+		t.commit();
 
 		// customize the SlidingMenu
 		SlidingMenu sm = getSlidingMenu();
 		sm.setShadowWidthRes(R.dimen.shadow_width);
-		sm.setShadowDrawable(R.drawable.shadow);
+		sm.setShadowDrawable(R.drawable.slidingbar_shadow);
 		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
 		sm.setFadeDegree(0.35f);
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
@@ -78,7 +78,7 @@ public class BaseActivity extends SlidingFragmentActivity {
 			mPager = vp;
 			mPager.setAdapter(this);
 			for (int i = 0; i < 3; i++) {
-				addTab(new SampleListFragment());
+				addTab(new ColorMenuFragment());
 			}
 		}
 
