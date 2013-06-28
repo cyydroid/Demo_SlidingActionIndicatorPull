@@ -3,6 +3,7 @@ package com.slidingmenu.example;
 import java.util.ArrayList;
 
 import com.slidingmenu.example.fragments.ColorFragment;
+import com.slidingmenu.lib.SlidingMenu;
 import com.viewpagerindicator.IconPagerAdapter;
 import com.viewpagerindicator.TabPageIndicator;
 
@@ -12,16 +13,24 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 
 
-public class SampleTabsDefault extends FragmentActivity {
-    private static final String[] CONTENT = new String[] { "Recent", "Artists", "Albums", "Songs", "Playlists" };
+public class SampleTabsDefault extends BaseActivity {
+    
+	public SampleTabsDefault() {
+		//super(titleRes);
+		// TODO Auto-generated constructor stub
+		super(R.string.viewpager_indicator);
+	}
+
+	private static final String[] CONTENT = new String[] { "Recent", "Artists", "Albums", "Songs", "Playlists" };
     
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.simple_tabs);
-
         FragmentPagerAdapter adapter = new ColorPagerAdapter(getSupportFragmentManager());
 
         ViewPager pager = (ViewPager)findViewById(R.id.pager);
@@ -29,6 +38,8 @@ public class SampleTabsDefault extends FragmentActivity {
 
         TabPageIndicator indicator = (TabPageIndicator)findViewById(R.id.indicator);
         indicator.setViewPager(pager);
+        
+
     }
 
 public class ColorPagerAdapter extends FragmentPagerAdapter {

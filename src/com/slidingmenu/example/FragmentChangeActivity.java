@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import com.slidingmenu.example.R;
 import com.slidingmenu.example.fragments.ColorFragment;
 import com.slidingmenu.example.fragments.ColorMenuFragment;
+import com.slidingmenu.example.fragments.ViewPIFragment;
 import com.slidingmenu.lib.SlidingMenu;
 
 public class FragmentChangeActivity extends BaseActivity {
@@ -22,8 +23,11 @@ public class FragmentChangeActivity extends BaseActivity {
 		// set the Above View
 		if (savedInstanceState != null)
 			mContent = getSupportFragmentManager().getFragment(savedInstanceState, "mContent");
-		if (mContent == null)
-			mContent = new ColorFragment(R.color.red);	
+		if (mContent == null){
+			//mContent = new ColorFragment(R.color.red);	
+			mContent =new ViewPIFragment();
+		}
+			
 		
 		// set the Above View
 		setContentView(R.layout.content_frame);

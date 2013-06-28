@@ -4,11 +4,16 @@
     <style name="ActionBarExampleTheme" parent="Theme.Sherlock.Light.DarkActionBar">
         <item name="homeAsUpIndicator">@drawable/slidingbar_indicator</item>
         <item name="android:homeAsUpIndicator">@drawable/slidingbar_indicator</item>
+        <!-- ViewPagerIndicator 的样式 -->
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        
+        
     </style>
-    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
-        <item name="android:typeface">monospace</item>
+ 	<!-- ViewPagerIndicator 的样式 -->
+	<style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
     </style>
-<style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+	<style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
         <item name="android:background">@drawable/custom_tab_indicator</item>
         <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
         <item name="android:textColor">#FF555555</item>
@@ -21,9 +26,7 @@
         <item name="android:fadingEdge">horizontal</item>
         <item name="android:fadingEdgeLength">8dp</item>
     </style>
-	<style name="StyledIndicators" parent="@android:style/Theme.Light">
-        
-        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
     </style>
-    
 </resources>
