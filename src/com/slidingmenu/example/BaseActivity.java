@@ -45,9 +45,14 @@ public class BaseActivity extends SlidingFragmentActivity {
 		sm.setShadowDrawable(R.drawable.slidingbar_shadow);
 		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
 		sm.setFadeDegree(0.35f);
+		getSlidingMenu().setFadeEnabled(false);
+		
+		getSlidingMenu().setBehindScrollScale(0);
+		
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setNavigationMode(TRIM_MEMORY_MODERATE);
 	}
 
 	@Override
